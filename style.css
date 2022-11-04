@@ -9,19 +9,44 @@ section{
     display: flex;
     flex-flow: column wrap;
     flex-direction: column;
-    flex-wrap: nowrap
+    flex-wrap: wrap
 }
 #pulpit {
     background: cadetblue;
+    float: left;
     display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(6, 50px);
+    /*grid-template-columns: 50px 50px 50px 50px 50px 50px;*/
+    /*grid-template-rows: 80px auto 80px;*/
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
     position: fixed; top: 0; left: 0; height: 100%; width: 100%;
+
+}
+
+.ikona{
+    padding: 10px;
+    width: fit-content;
+
+}
+.ikona span{
+    display: block;
+    cursor: pointer;
+    color: aqua;
+
+    display: flex;
+    justify-content: center;
+
+
 }
 .ikona img {
-    max-height: 100px;
-    max-width: 100px;
+    max-height: 50px;
+    max-width: 50px;
     width: auto;
     height: auto;
     cursor: pointer;
+
 }
 
 
@@ -35,10 +60,17 @@ section{
     width: 100%;
 
 }
+
 #pasekZadan img{
     /*width: auto;*/
     /*height: auto;*/
     max-width: 50px;
     max-height: 50px;
     cursor: pointer;
+}
+
+#pudzian{
+    display: none;
+    height: 250px;
+    position: absolute;
 }
