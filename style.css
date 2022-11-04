@@ -74,3 +74,6 @@ section{
     height: 250px;
     position: absolute;
 }
+#grid_test{
+    background-color:black;
+}
