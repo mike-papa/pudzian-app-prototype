@@ -1,0 +1,44 @@
+html{
+    margin: 0;
+}
+body{
+    margin: 0;
+}
+
+section{
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap
+}
+#pulpit {
+    background: cadetblue;
+    display: grid;
+    position: fixed; top: 0; left: 0; height: 100%; width: 100%;
+}
+.ikona img {
+    max-height: 100px;
+    max-width: 100px;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+
+#pasekZadan{
+    /*display: inline-block;*/
+    background: aqua;
+    height: auto;
+    display: grid;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+#pasekZadan img{
+    /*width: auto;*/
+    /*height: auto;*/
+    max-width: 50px;
+    max-height: 50px;
+    cursor: pointer;
+}
