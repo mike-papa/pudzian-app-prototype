@@ -3,16 +3,20 @@ html{
 }
 body{
     margin: 0;
+    background-image: url("images/background.png") ;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 section{
     display: flex;
     flex-flow: column wrap;
     flex-direction: column;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+
 }
 #pulpit {
-    background: cadetblue;
+
     float: left;
     display: grid;
     grid-template-columns: repeat(4, 50px);
@@ -76,4 +80,9 @@ section{
 }
 #grid_test{
     background-color:black;
+}
+.footer{
+    background-image: url("images/pasek_zadan.png");
+    position: absolute;
+
 }
