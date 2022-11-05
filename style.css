@@ -1,11 +1,19 @@
 html{
     margin: 0;
+        cursor: url("images/kursor.png"), auto;
+
 }
 body{
     margin: 0;
     background-image: url("images/background.png") ;
-    background-size:cover;
-    background-repeat:no-repeat;
+    /* background-size:cover;
+    background-repeat:no-repeat; */
+    background-size: auto;
+    position: absolute;
+    top: -100px;
+
+    width: 100%;
+    height: 100%;
 }
 
 section{
@@ -35,7 +43,7 @@ section{
 
 }
 /* .ikona span{
-    display: block;
+    display: block; 
     cursor: pointer;
     color: aqua;
 
@@ -49,7 +57,9 @@ section{
     max-width: 100px;
     width: auto;
     height: auto;
-    cursor: pointer;
+    /* cursor: pointer; */
+    cursor: url("images/pointer.png"), auto;
+
 
 }
 
@@ -73,23 +83,55 @@ section{
     cursor: pointer;
 }
 
+#kamien{
+    height: 200px;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+}
 #pudzian{
-    /* display: none; */
+    display: none;
     height: 300px;
     position: absolute;
-    bottom: 50px;
+    bottom: -50px;
     right: 0px;
 }
 #grid_test{
+    visibility: hidden;
     /* display: none; */
     background-color:black;
 }
 .footer img{
     /* position: fixed; */
     position: absolute;
-                bottom: 0px;
+                bottom: -100px;
     height: 50px;
     width: 100%;
     float: initial;
 
+}
+
+
+/* POPUP */
+
+#popup {
+
+    position: fixed;
+     top: 40%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+    width: 600px;
+    padding: 50px;
+    /* box-shadow: 0 5px 30px rgba(0, 0, 0, .30); */
+    background: rgba(255, 255, 255, 0);
+    visibility: hidden;
+    opacity: 0;
+        transition: 0.5s ;
+}
+
+#popup.active{
+    /* top: 50%; */
+    visibility: visible;
+    opacity: 1;
+        transition: 3s ;
 }
