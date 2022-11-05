@@ -4,8 +4,8 @@ html{
 body{
     margin: 0;
     background-image: url("images/background.png") ;
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-size:cover;
+    background-repeat:no-repeat;
 }
 
 section{
@@ -19,12 +19,12 @@ section{
 
     float: left;
     display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(6, 50px);
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(7, 50px);
     /*grid-template-columns: 50px 50px 50px 50px 50px 50px;*/
     /*grid-template-rows: 80px auto 80px;*/
-    grid-column-gap: 50px;
-    grid-row-gap: 50px;
+    grid-column-gap: 100px;
+    grid-row-gap: 80px;
     position: fixed; top: 0; left: 0; height: 100%; width: 100%;
 
 }
@@ -34,7 +34,7 @@ section{
     width: fit-content;
 
 }
-.ikona span{
+/* .ikona span{
     display: block;
     cursor: pointer;
     color: aqua;
@@ -43,10 +43,10 @@ section{
     justify-content: center;
 
 
-}
+} */
 .ikona img {
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 100px;
+    max-width: 100px;
     width: auto;
     height: auto;
     cursor: pointer;
@@ -74,15 +74,22 @@ section{
 }
 
 #pudzian{
-    display: none;
-    height: 250px;
+    /* display: none; */
+    height: 300px;
     position: absolute;
+    bottom: 50px;
+    right: 0px;
 }
 #grid_test{
+    /* display: none; */
     background-color:black;
 }
-.footer{
-    background-image: url("images/pasek_zadan.png");
+.footer img{
+    /* position: fixed; */
     position: absolute;
+                bottom: 0px;
+    height: 50px;
+    width: 100%;
+    float: initial;
 
 }
