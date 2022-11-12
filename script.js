@@ -77,7 +77,7 @@ function playPositive(){
     number = Math.floor((Math.random() * 12) + 1);
   } 
   number.toString();
-  let audio = new Audio("p_"+number.toString()+".mp3"); // dodac sciezke dzwieku
+  let audio = new Audio("audio/p_"+number.toString()+".mp3"); // dodac sciezke dzwieku
   showPudzian.style.display="block";
 //   toggleOff();
 setTimeout(toggleOff,mapPositive.get(number));
@@ -92,7 +92,7 @@ setTimeout(toggleOff,mapPositive.get(number));
   }
 
   if (rockCounter == 10){
-    let winningAudio = new Audio ("browarek.mp3") // Zasluzone piwo
+    let winningAudio = new Audio ("audio/browarek.mp3") // Zasluzone piwo
     showKufel.style.display="block";
     //showPudzian.src = "images/pudzian_0.png";
     showPudzian.style.display = "block"; 
@@ -110,7 +110,7 @@ function playNegative(){
   while (number == 6){
     number = Math.floor((Math.random() * 8) + 1);
   }
-  let audio = new Audio("n_"+number.toString()+".mp3");
+  let audio = new Audio("audio/n_"+number.toString()+".mp3");
   showPudzian.style.display="block";
   //
   setTimeout(toggleOff,mapNegative.get(number));
