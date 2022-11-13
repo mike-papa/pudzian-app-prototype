@@ -54,7 +54,7 @@ section{
 .ikona img {
     height: 10vh;
     width: 10vh;
-    cursor: url("images/pointer.png"), auto;
+    cursor: url("images/pointer.png"), pointer;
 
 }
 
@@ -66,16 +66,19 @@ section{
   bottom: 0;
   width: 100%;
   margin: 0;
-
 }
+
 .footer img{
     position: fixed;
     bottom: 0;
     margin: 0;
     height: 5vh;
     width: 100%;
+    cursor: url("images/pointer.png"), pointer;
 
 }
+
+
 
 
 /* widgety */
