@@ -101,15 +101,21 @@ section{
             }
   }
 
+ 
 #kufel{
     display: none;
     /* height: 200px; */
     min-height: 120px;
     height: 22vh;
     position: absolute;
-    bottom: -50px;
+    bottom: 20px;
     right: 180px;
 }
+@media (max-width: 600px) {
+    #kufel{
+        
+        right: 130px;    }
+  }
 
 
 
